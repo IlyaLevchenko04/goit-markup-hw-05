@@ -718,6 +718,8 @@ border-radius: 4px;
     width: 100%;
     height: 100%;
     top: 0;
+    transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .mod-close-btn{
