@@ -17,7 +17,7 @@
             <a href="/" class="link header-logo">Web<span class="header-studio">Studio</span></a>
             <nav class="nav">
             <ul class="list nav-list">
-                <li class="nav-item"><a href="./index.html" class="link nav-link">Студия</a></li>
+                <li class="nav-item"><a href="./index.html" class="link nav-link active">Студия</a></li>
                 <li class="nav-item"><a href="./portfolio.html" class="link nav-link">Портфолио</a></li>
                 <li class="nav-item"><a href="" class="link nav-link">Контакты</a></li>
             </ul>
@@ -32,7 +32,7 @@
     <section class="hero">
         <div class="hero-container container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero-button">Заказать услугу</button>
+            <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
         </div>
     </section>
 
@@ -69,14 +69,23 @@
         <div class="photo-container container">
         <h2 class="photo-title">Чем мы занимаемся</h2>
         <ul class="list photo-list">
-            <li>
-                <img src="./images/img.jpg" alt="Прогресивное оборудование" width="370px">
+            <li class="photo-item">
+                
+                    <img src="./images/img.jpg" alt="Прогресивное оборудование" width="370px" class="photo">
+                    <div class="photo-text-container"><span class="photo-text">Десктопні додатки</span>
+                </div>
             </li>
-            <li>
-                <img src="./images/img(1).jpg" alt="Мультиплатформность" width="370px">
+            <li class="photo-item">
+                
+                    <img src="./images/img(1).jpg" alt="Мультиплатформность" width="370px" class="photo">
+                    <div class="photo-text-container"><span class="photo-text">Мобільні додатки</span>
+                </div>
             </li>
-            <li>
-                <img src="./images/img(2).jpg" alt="Цветокорекция" width="370px">
+            <li class="photo-item">
+                
+                    <img src="./images/img(2).jpg" alt="Цветокорекция" width="370px" class="photo">
+                    <div class="photo-text-container"><span class="photo-text">Дизайнерські рішення</span>
+                </div>
             </li>
         </ul>
     </div>
@@ -181,5 +190,15 @@
        </div>
     </div>
     </footer>
+
+    
+        <div class="mod-container is-hidden" data-modal>
+            <div class="mod-window">
+               <button class="mod-close-btn"><svg width="12px" height="12px" data-modal-close><use href="./images/symbol-defs.svg#icon-closeBtn-1"></use></svg></button>
+            </div>
+        </div>
+
+        <script src="./js/modal.js"></script>
+
 </body>
 </html>
